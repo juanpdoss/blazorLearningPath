@@ -1,0 +1,97 @@
+﻿@page "/productos"
+
+<PageTitle>Productos</PageTitle>
+
+
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="CreateProducts">Click me</button>
+
+<div>
+    <span></span>
+
+</div>
+
+
+@code {
+    Producto[] productos = new Producto[10];
+
+    enum ETipo
+    {
+        calzado,
+        indumentaria,
+
+        aro,
+
+        collar,
+
+        animeStuff,
+
+        fandomStuff,
+
+    }
+    enum EMarca
+    {
+        lunaPLena = 0,
+        sharon,
+
+        kori,
+
+        tidesShops,
+
+        fairyStore,
+
+        srtaKawaii,
+    }
+
+    class Producto
+    {
+
+        ETipo tipo;
+        float precio;
+        EMarca marca;
+
+        public Producto(ETipo tipo, float precio, EMarca marca)
+        {
+            this.tipo = tipo;
+            this.precio = precio;
+            this.marca = marca;
+        }
+
+
+
+        public override string ToString()
+        {
+            return $"Tipo de producto: {this.tipo},\n" +
+            $"Tipo de precio: {this.precio},\n" +
+            $"De nuestra marca: {this.marca},\n";
+
+        }
+
+    }
+
+
+    Producto createRandomProduct()
+    {
+        Random randomPrice = new Random();
+
+        return new Producto((ETipo)randomPrice.Next(1, 5), randomPrice.Next(150, 1200), (EMarca)(randomPrice.Next(1, 5)));
+    }
+
+    private void CreateProducts()
+    {
+        for (int i = 0, l = this.productos.Length - 1; i < l; i++)
+        {
+            if (this.productos[i] is null)
+            {
+                this.productos[i] = this.createRandomProduct();
+            }
+        }
+
+    }
+
+
+    private void IncrementCount()
+    {
+    }
+}
