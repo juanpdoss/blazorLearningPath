@@ -4,17 +4,20 @@
 
 
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-<button class="btn btn-primary" @onclick="CreateProducts">Click me</button>
+<button class="btn btn-primary" @onclick="DeleteProducts">Limpiar productos</button>
+<button class="btn btn-primary" @onclick="LogProducts">Loguear productos a la consola</button>
+<button class="btn btn-primary" @onclick="CreateProducts">Crear productos</button>
 
 <div>
-    <span></span>
+    <span @for=""></span>
 
 </div>
 
 
+
 @code {
     Producto[] productos = new Producto[10];
+
 
     enum ETipo
     {
@@ -71,6 +74,7 @@
     }
 
 
+    // Make a random instance of a product, and returns it
     Producto createRandomProduct()
     {
         Random randomPrice = new Random();
@@ -78,6 +82,7 @@
         return new Producto((ETipo)randomPrice.Next(1, 5), randomPrice.Next(150, 1200), (EMarca)(randomPrice.Next(1, 5)));
     }
 
+    // create randoms products using method CreateRandomProduct()
     private void CreateProducts()
     {
         for (int i = 0, l = this.productos.Length - 1; i < l; i++)
@@ -91,7 +96,16 @@
     }
 
 
-    private void IncrementCount()
+    // show all productos on console
+    void LogProducts()
     {
+        Console.WriteLine(this.productos);
+    }
+
+    // re-create the products, and then calls the Garbage Collector
+    private void DeleteProducts()
+    {
+        this.productos = new Producto[10];
+        GC.Collect();
     }
 }

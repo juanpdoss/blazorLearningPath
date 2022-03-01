@@ -45,39 +45,6 @@
         }
       },
       {
-        "HashCode": 305569996,
-        "Kind": "Components.Component",
-        "Name": "TodoList.Pages.Index",
-        "AssemblyName": "TodoList",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 1406372827,
-        "Kind": "Components.Component",
-        "Name": "TodoList.Pages.Index",
-        "AssemblyName": "TodoList",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TodoList.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -571664738,
         "Kind": "Components.Component",
         "Name": "TodoList.Pages.Todo",
@@ -140,6 +107,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "TodoList.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 305569996,
+        "Kind": "Components.Component",
+        "Name": "TodoList.Pages.Index",
+        "AssemblyName": "TodoList",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TodoList.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 1406372827,
+        "Kind": "Components.Component",
+        "Name": "TodoList.Pages.Index",
+        "AssemblyName": "TodoList",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TodoList.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TodoList.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
