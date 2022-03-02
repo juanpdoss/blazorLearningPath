@@ -78,121 +78,101 @@
         }
       },
       {
-        "HashCode": -571664738,
+        "HashCode": -422359977,
         "Kind": "Components.Component",
-        "Name": "TodoList.Pages.Todo",
+        "Name": "TodoList.Pages.Products",
         "AssemblyName": "TodoList",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Todo"
+            "TagName": "Products"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.Pages.Todo"
+          "Common.TypeName": "TodoList.Pages.Products"
         }
       },
       {
-        "HashCode": 305417970,
+        "HashCode": -1607119987,
         "Kind": "Components.Component",
-        "Name": "TodoList.Pages.Todo",
+        "Name": "TodoList.Pages.Products",
         "AssemblyName": "TodoList",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TodoList.Pages.Todo"
+            "TagName": "TodoList.Pages.Products"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.Pages.Todo",
+          "Common.TypeName": "TodoList.Pages.Products",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 609474634,
+        "HashCode": -680522904,
         "Kind": "Components.Component",
-        "Name": "TodoList.Pages.Counter",
+        "Name": "TodoList.Pages.Home",
         "AssemblyName": "TodoList",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "Home"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.Pages.Counter"
+          "Common.TypeName": "TodoList.Pages.Home"
         }
       },
       {
-        "HashCode": 948826974,
+        "HashCode": 1531448977,
         "Kind": "Components.Component",
-        "Name": "TodoList.Pages.Counter",
+        "Name": "TodoList.Pages.Home",
         "AssemblyName": "TodoList",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TodoList.Pages.Counter"
+            "TagName": "TodoList.Pages.Home"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.Pages.Counter",
+          "Common.TypeName": "TodoList.Pages.Home",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 414055228,
+        "HashCode": -1711483287,
         "Kind": "Components.Component",
-        "Name": "TodoList.Shared.SurveyPrompt",
+        "Name": "TodoList.App",
         "AssemblyName": "TodoList",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.Shared.SurveyPrompt"
+          "Common.TypeName": "TodoList.App"
         }
       },
       {
-        "HashCode": -1941583052,
+        "HashCode": 1888413271,
         "Kind": "Components.Component",
-        "Name": "TodoList.Shared.SurveyPrompt",
+        "Name": "TodoList.App",
         "AssemblyName": "TodoList",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "TodoList.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "TodoList.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.Shared.SurveyPrompt",
+          "Common.TypeName": "TodoList.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -293,6 +273,59 @@
         }
       },
       {
+        "HashCode": 414055228,
+        "Kind": "Components.Component",
+        "Name": "TodoList.Shared.SurveyPrompt",
+        "AssemblyName": "TodoList",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TodoList.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": -1941583052,
+        "Kind": "Components.Component",
+        "Name": "TodoList.Shared.SurveyPrompt",
+        "AssemblyName": "TodoList",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TodoList.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TodoList.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1107128154,
         "Kind": "Components.Component",
         "Name": "TodoList.Shared.NavMenu",
@@ -322,39 +355,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "TodoList.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1711483287,
-        "Kind": "Components.Component",
-        "Name": "TodoList.App",
-        "AssemblyName": "TodoList",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.App"
-        }
-      },
-      {
-        "HashCode": 1888413271,
-        "Kind": "Components.Component",
-        "Name": "TodoList.App",
-        "AssemblyName": "TodoList",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TodoList.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TodoList.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16655,6 +16655,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\ejemp\\OneDrive\\Escritorio\\dotnet\\TodoList\\Pages\\Home.razor",
+      "TargetPath": "Pages\\Home.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\ejemp\\OneDrive\\Escritorio\\dotnet\\TodoList\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
@@ -16675,8 +16680,8 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\ejemp\\OneDrive\\Escritorio\\dotnet\\TodoList\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
+      "FilePath": "c:\\Users\\ejemp\\OneDrive\\Escritorio\\dotnet\\TodoList\\Pages\\Products.razor",
+      "TargetPath": "Pages\\Products.razor",
       "FileKind": "component"
     },
     {
@@ -16692,11 +16697,6 @@
     {
       "FilePath": "c:\\Users\\ejemp\\OneDrive\\Escritorio\\dotnet\\TodoList\\App.razor",
       "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\ejemp\\OneDrive\\Escritorio\\dotnet\\TodoList\\Pages\\Todo.razor",
-      "TargetPath": "Pages\\Todo.razor",
       "FileKind": "component"
     },
     {

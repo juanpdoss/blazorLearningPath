@@ -1,3 +1,5 @@
+// this version of Program.cs belongs to the blazor server version, it´s run entirely on a server
+// we can take a different aproach using blazor with webAssembly (if so, it's going to run on the client)
 
 using TodoList.Data;
 

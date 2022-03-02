@@ -2,14 +2,22 @@
 
 <PageTitle>Productos</PageTitle>
 
-
-
 <button class="btn btn-primary" @onclick="DeleteProducts">Limpiar productos</button>
-<button class="btn btn-primary" @onclick="LogProducts">Loguear productos a la consola</button>
 <button class="btn btn-primary" @onclick="CreateProducts">Crear productos</button>
+<button class="btn btn-primary" @onclick="LogProducts" >Loguear productos a la consola</button>
 
 <div>
-    <span @for=""></span>
+    @if (productos.Count > 0)
+    {
+        <ul>
+            @foreach (Producto item in productos)
+            {
+                <li>@item.ToString()</li>
+                <br>
+            }
+        </ul>
+    }
+
 </div>
 
 
@@ -76,17 +84,21 @@
     Producto createRandomProduct()
     {
         Random randomPrice = new Random();
-
         return new Producto((ETipo)randomPrice.Next(1, 5), randomPrice.Next(150, 1200), (EMarca)(randomPrice.Next(1, 5)));
     }
 
     // create randoms products using method CreateRandomProduct()
     private void CreateProducts()
     {
-        for (int i = 0; i < 10; i++)
+        if (this.productos.Count == 0)
         {
-            this.productos.Add(this.createRandomProduct());
+            // adds ten products
+            for (int i = 0; i < 10; i++)
+            {
+                this.productos.Add(this.createRandomProduct());
+            }
         }
+
     }
 
 
