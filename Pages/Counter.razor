@@ -10,14 +10,12 @@
 
 <div>
     <span @for=""></span>
-
 </div>
 
 
 
 @code {
-    Producto[] productos = new Producto[10];
-
+    List<Producto> productos = new List<Producto>();
 
     enum ETipo
     {
@@ -66,7 +64,7 @@
         public override string ToString()
         {
             return $"Tipo de producto: {this.tipo},\n" +
-            $"Tipo de precio: {this.precio},\n" +
+            $"Precio: {this.precio},\n" +
             $"De nuestra marca: {this.marca},\n";
 
         }
@@ -85,27 +83,30 @@
     // create randoms products using method CreateRandomProduct()
     private void CreateProducts()
     {
-        for (int i = 0, l = this.productos.Length - 1; i < l; i++)
+        for (int i = 0; i < 10; i++)
         {
-            if (this.productos[i] is null)
-            {
-                this.productos[i] = this.createRandomProduct();
-            }
+            this.productos.Add(this.createRandomProduct());
         }
-
     }
 
 
-    // show all productos on console
+    // show all products on the console
     void LogProducts()
     {
-        Console.WriteLine(this.productos);
+        if (this.productos.Count == 0)
+        {
+            return;
+        }
+
+        foreach (Producto item in this.productos)
+        {
+            Console.WriteLine(item.ToString());
+        }
     }
 
     // re-create the products, and then calls the Garbage Collector
     private void DeleteProducts()
     {
-        this.productos = new Producto[10];
-        GC.Collect();
+        this.productos.Clear();
     }
 }

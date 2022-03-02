@@ -25,3 +25,5 @@ C:\Users\ejemp\OneDrive\Escritorio\dotnet\TodoList\obj\Debug\net6.0\refint\TodoL
 C:\Users\ejemp\OneDrive\Escritorio\dotnet\TodoList\obj\Debug\net6.0\TodoList.pdb
 C:\Users\ejemp\OneDrive\Escritorio\dotnet\TodoList\obj\Debug\net6.0\TodoList.genruntimeconfig.cache
 C:\Users\ejemp\OneDrive\Escritorio\dotnet\TodoList\obj\Debug\net6.0\ref\TodoList.dll
+C:\Users\ejemp\OneDrive\Escritorio\dotnet\TodoList\bin\Debug\net6.0\package-lock.json
+C:\Users\ejemp\OneDrive\Escritorio\dotnet\TodoList\bin\Debug\net6.0\package.json
